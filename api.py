@@ -6,7 +6,7 @@ from detector import detector
 
 app = Flask('AI Misinformation Detector')
 CORS(app)
-
+# test
 @app.route("/", methods=['POST'])
 def detect():
     print(request.data)
