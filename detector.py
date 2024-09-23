@@ -13,8 +13,6 @@ class answer:
             "submissionText": self.summary,
         }
 
-
-
 def format_data(data):
     try:
         correct, summary = data.split('@')
@@ -28,7 +26,6 @@ def format_data(data):
 class detector:
     def __init__(self):
         self.client = OpenAI()
-        ApiKey = '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'
         self.client.api_key = ApiKey
         self.assistant_id = 'asst_w9q2mR176ddHJiK0wLWczBRw'
 
